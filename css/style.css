@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Josefin Sans", sans-serif;
+}
+:root {
+    font-size: 16px;
+}
+header, #interactive, section{
+    margin-bottom: 70px;
+}
+header, main, footer {
+    padding: 30px 50px;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #F7F6F2;
+    font-size: 2rem;
+    font-weight: 600;
+}
+header {
+    width: 100%;
+    height: 80vh;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav__links li {
+    list-style-type: none;
+}
+.nav__link {
+    text-decoration: none;
+    color: #F7F6F2;
+    margin: 0px 15px
+}
+#hero {
+    width: min-content;
+    flex-wrap: wrap;
+    border: 1px solid #F7F6F2;
+    padding: 15px;
+    height: fit-content;
+
+}
+#hero > h1 {
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+}
+main {
+    width: 100%;
+}
+#interactive {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+}
+#interactive__text {
+    padding: 40px 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #fff;
+    width: 400px;
+    height: fit-content;
+}
+#interactive__text > h2, #section__title > h2{
+    font-size: 2rem;
+    font-weight: 200;
+    
+}
+#interactive__text > h2 {
+    margin-bottom: 20px;
+}
+#interactive__text > p {
+    font-weight: 200;
+}
+#section__title  {
+    display: flex;
+    flex-basis: 100;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.seeBtn {
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.3s;
+}
+.seeBtn:hover {
+    background: #000;
+    color: #F7F6F2;
+    border: none
+}
+#section__image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100;
+    align-items: center;
+    width: 100%;
+ 
+}
+.section__images {
+    position: relative;
+    height: 450px;
+    width: 256px;
+    margin: 15px;
+    cursor: pointer;
+}
+.section__images:hover {
+    transform: scale(1.02);
+}
+.section__images > h3 {
+    position: absolute;
+    font-weight: 200;
+    color: #fdfdfb;
+    left: 20px;
+    bottom: 30px;
+}
+#earth {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+}
+#arcade {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+#team {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+#curiousity {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+}
+#grid {
+    background-image: url("../images/desktop/image-grid.jpg");
+}
+#fisheye {
+    background-image: url("../images/desktop/image-fisheye.jpg")
+}
+#above {
+    background-image: url("../images/desktop/image-from-above.jpg");
+}
+#borealis {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+footer {
+    background-color: #000;
+    min-height: 10vh;
+    width: 100%;
+    color: #F7F6F2;
+}
+#footer__top, .footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#footer__top {
+    padding-left: 40px;
+}
+.footer__svg  > * {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#footer__logo {
+    font-size: 1rem;
+}
+#bottom__nav {
+    display: flex;
+    align-items: center;
+}
+ 
+#bottom__nav > li {
+    list-style-type: none;
+    margin-right: 10px;
+    
+}
+.bottom__link {
+    color: #b4b4b4;
+    text-decoration: none;
+}
+#hamburger, #no-display {
+    display: none;
+}
+@media screen and (max-width : 1024px) {
+
+    #nav__links, .seeBtn {
+        display: none;
+    }
+    #hamburger, #no-display {
+        display: block;
+    }
+    #interactive {
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        height: max-content;
+    }
+    #interactive__text {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    #interactive__text > h2 {
+        font-weight: 300;
+    }
+    #interactive__text > p {
+        font-weight: 300;
+    }
+    #footer__top, .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer__top > *, .footer__bottom > * {
+        margin : 10px 0px;
+    }
+    #section__title, #section__image > * {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+   #no-display {
+       width: 50%;
+       margin: 0 auto;
+   }
+    .section__images {
+        width : 100%;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .section__images > h3 {
+        left: 40px;
+        bottom: 50px;
+    }
+    #earth {
+        background-image: url("../images/mobile/image-deep-earth.jpg");
+    }
+    #arcade {
+        background-image: url("../images/mobile/image-night-arcade.jpg");
+    }
+    #team {
+        background-image: url("../images/mobile/image-soccer-team.jpg");
+    }
+    #curiousity {
+        background-image: url("../images/mobile/image-curiosity.jpg");
+    }
+    #grid {
+        background-image: url("../images/mobile/image-grid.jpg");
+    }
+    #fisheye {
+        background-image: url("../images/mobile/image-fisheye.jpg")
+    }
+    #above {
+        background-image: url("../images/mobile/image-from-above.jpg");
+    }
+    #borealis {
+        background-image: url("../images/mobile/image-pocket-borealis.jpg");
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        width: 100%;
+        height: fit-content;
+    }
+    #hero > h1 {
+        font-size: 1.5rem;
+    }
+ 
+
+}
