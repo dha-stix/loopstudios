@@ -1,4 +1,5 @@
-# Frontend Mentor - Loopstudios landing page
+# Live URL https://dha-stix.github.io/loopstudios/
+## Frontend Mentor - Loopstudios landing page
 
 ![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
 
